@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Rama Ship Management Pvt. Ltd.</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #e6f7f8;
+            color: #003344;
+        }
+
+        /* TOP LEFT LOGO */
+        .top-logo {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            z-index: 1000;
+        }
+        .top-logo img {
+            width: 80px; /* Small logo */
+            height: auto;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            background: url('images/background.jpg') no-repeat center/cover;
+            height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+        .hero h1 {
+            font-size: clamp(28px, 6vw, 48px);
+            font-weight: bold;
+            text-shadow: 0 0 12px black;
+        }
+
+        /* ABOUT */
+        .about {
+            background: #dff4f5;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        /* SERVICES SECTION */
+        .services {
+            padding: 60px 20px;
+            text-align: center;
+            background: url('images/service1.jpg') no-repeat center/cover;
+            background-attachment: fixed;
+            color: white;
+            text-shadow: 0 0 10px black;
+        }
+        .services h2 {
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+        .service-wrapper {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+        .service-box {
+            background: rgba(0, 51, 68, 0.75);
+            width: 350px;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: left;
+            box-shadow: 0 0 12px rgba(0,0,0,0.3);
+        }
+        .service-box h3 {
+            font-size: 26px;
+            margin-bottom: 10px;
+            color: #00d0d6;
+        }
+        .service-box p {
+            line-height: 1.6;
+            font-size: 16px;
+            color: #e8fafa;
+        }
+
+        /* SUPPORT SECTION */
+        .support {
+            padding: 60px 20px;
+            background: #003344;
+            color: white;
+            text-align: center;
+        }
+        .support h2 {
+            font-size: 34px;
+            margin-bottom: 20px;
+        }
+        .support-columns {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin-top: 20px;
+        }
+        .support-box {
+            background: #004455;
+            width: 330px;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: left;
+            box-shadow: 0 0 12px rgba(0,0,0,0.3);
+        }
+        .support-box h3 {
+            color: #00d0d6;
+        }
+        .support-box p {
+            line-height: 1.6;
+        }
+
+        /* QUERY FORM SECTION */
+        .query {
+            padding: 60px 20px;
+            background: #005566;
+            color: white;
+            text-align: center;
+        }
+        .query h2 {
+            font-size: 34px;
+            margin-bottom: 30px;
+        }
+        .query form {
+            max-width: 500px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .query input, .query textarea {
+            padding: 12px;
+            border-radius: 8px;
+            border: none;
+            font-size: 16px;
+        }
+        .query input[type="submit"] {
+            background: #00d0d6;
+            color: #003344;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .query input[type="submit"]:hover {
+            background: #00aeb3;
+        }
+
+        footer {
+            background: #002833;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .service-wrapper,
+            .support-columns {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- TOP LEFT LOGO -->
+    <div class="top-logo">
+        <img src="images/companylogo.jpg" alt="Company Logo">
+    </div>
+
+    <!-- HERO SECTION -->
+    <div class="hero">
+        <h1>SAIL BEYOND LIMITS WITH THE RAMA SHIP MANAGEMENT PVT. LTD.</h1>
+    </div>
+
+    <!-- ABOUT SECTION -->
+    <div class="about">
+        <h2>Reliable Maritime Solutions</h2>
+        <p>We provide world-class technical and crew management services to ensure safe and efficient vessel operations.</p>
+    </div>
+
+    <!-- SERVICES SECTION -->
+    <div class="services">
+        <h2>OUR SERVICES</h2>
+        <div class="service-wrapper">
+            <div class="service-box">
+                <h3>Technical Management</h3>
+                <p>We ensure complete technical supervision of vessels, including maintenance planning, safety inspections, 
+                dry-docking support, spare parts procurement, and compliance with international maritime standards. Our 
+                experienced team guarantees smooth and efficient vessel operations with maximum safety and reliability.</p>
+            </div>
+            <div class="service-box">
+                <h3>Crew Management</h3>
+                <p>We provide highly skilled and certified seafarers, covering recruitment, training, documentation, 
+                payroll, travel arrangements, and onboard compliance. Our crew management ensures vessels operate smoothly 
+                with competent and well-trained professionals onboard.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTACT & SUPPORT SECTION -->
+    <div class="support">
+        <h2>Contact & Support</h2>
+        <div class="support-columns">
+            <div class="support-box">
+                <h3>General Support</h3>
+                <p><strong>Email:</strong> crewing@theramashipmanagement.com</p>
+                <p><strong>Helpline:</strong> +91 9039100279</p>
+            </div>
+            <div class="support-box">
+                <h3>Travel & Crew Assistance</h3>
+                <p><strong>Travel Management (RA FLAMING):</strong></p>
+                <p>+44 7450631737</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- QUERY FORM SECTION -->
+    <div class="query">
+        <h2>Send Us Your Query</h2>
+        <form action="#" method="post">
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="6" placeholder="Your Query" required></textarea>
+            <input type="submit" value="Submit Query">
+        </form>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        © 2025 The Rama Ship Management Pvt. Ltd. All Rights Reserved.
+    </footer>
+
+</body>
+</html>
