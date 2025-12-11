@@ -7,12 +7,13 @@
   <link rel="stylesheet" href="home.css" />
 </head>
 <body>
-  <!-- header -->
-  <!-- paste shared header here, but mark Home as active -->
+
+  <!-- HEADER -->
   <header class="site-header">
-    <div class="container header-inner">
+    <div class="header-inner">
+      
       <a href="home.html" class="brand">
-        <div class="brand-mark">SV</div>
+        <img src="images/companylogo.jpg" alt="SV Logo" class="brand-mark" />
         <div class="brand-text">
           <span class="brand-name">Shivuvishu Shipping Pvt Ltd</span>
           <span class="brand-tagline">Safe, seamless sea logistics</span>
@@ -26,21 +27,24 @@
         <a href="contact.html" class="nav-link">Contact</a>
       </nav>
 
-      <button id="navToggle" class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
-        ☰
-      </button>
+      <button id="navToggle" class="nav-toggle">☰</button>
+
     </div>
   </header>
 
+  <!-- MAIN CONTENT -->
   <main class="container">
+
+    <!-- HERO -->
     <section class="hero">
       <div class="hero-content">
         <p class="eyebrow">Global vessel & cargo solutions</p>
         <h1>Reliable shipping across every trade lane.</h1>
         <p class="lead">
-          SV Shipping delivers safe, on‑time and compliant sea logistics with
+          SV Shipping delivers safe, on-time and compliant sea logistics with
           dedicated technical and crew management.
         </p>
+
         <div class="cta-row">
           <a href="services.html" class="btn btn-primary">View Services</a>
           <a href="contact.html" class="btn btn-ghost">Get a Quote</a>
@@ -48,50 +52,78 @@
       </div>
     </section>
 
+    <!-- HIGHLIGHTS -->
     <section class="highlights">
       <article>
-        <h2>End‑to‑end vessel care</h2>
+        <h2>End-to-end vessel care</h2>
         <p>Technical management, maintenance and safety oversight for a dependable fleet.</p>
       </article>
+
       <article>
         <h2>Experienced global crew</h2>
         <p>Certified seafarers and crew management for smooth vessel operations.</p>
       </article>
+
       <article>
         <h2>24/7 operations desk</h2>
-        <p>Round‑the‑clock support and voyage monitoring across key trade routes.</p>
+        <p>Round-the-clock support and voyage monitoring across key trade routes.</p>
       </article>
     </section>
 
+    <!-- INFO STRIP -->
     <section class="info-strip">
+
       <div class="info-card">
         <h3>Why shippers choose SV Shipping</h3>
-        <p>Transparent reporting, strict compliance and a safety‑first culture on every voyage.</p>
+        <p>Transparent reporting, strict compliance and a safety-first culture on every voyage.</p>
       </div>
+
       <div class="info-metrics">
-        <div>
+
+        <div class="metric-card">
+          <div class="icon">⏱️</div>
           <span class="metric">24/7</span>
           <span class="label">Ops support</span>
         </div>
-        <div>
+
+        <div class="metric-card">
+          <div class="icon">🌍</div>
           <span class="metric">Global</span>
           <span class="label">Trade coverage</span>
         </div>
-        <div>
+
+        <div class="metric-card">
+          <div class="icon">⚓</div>
           <span class="metric">Safety</span>
           <span class="label">At our core</span>
         </div>
+
       </div>
     </section>
+
   </main>
 
+  <!-- FOOTER -->
   <footer class="site-footer">
-    <div class="container footer-inner">
+    <div class="footer-inner">
+
       <small>© 2025 Shivuvishu Shipping Private Limited. All rights reserved.</small>
-      <a href="mailto:info@svshipping.com">info@svshipping.com</a>
+
+      <!-- working mailto link -->
+      <a href="mailto:info@svshipping.com" class="footer-email">
+        info@svshipping.com
+      </a>
+
     </div>
   </footer>
 
-  <script src="main.js"></script>
+  <script>
+    // Mobile Navigation Toggle
+    const navToggle = document.getElementById("navToggle");
+    navToggle?.addEventListener("click", () => {
+      document.body.classList.toggle("nav-open");
+    });
+  </script>
+
 </body>
 </html>
