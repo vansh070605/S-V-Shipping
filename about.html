@@ -4,14 +4,24 @@
   <meta charset="UTF-8" />
   <title>SV Shipping | About</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="about.css" />
 </head>
 <body>
-  <!-- header, About active -->
+
+  <!-- TOP STRIP -->
+  <div class="top-strip">🚢 SAFE, SEAMLESS SEA LOGISTICS — SHIVUVISHU SHIPPING PVT LTD.</div>
+
+  <!-- HEADER -->
   <header class="site-header">
-    <div class="container header-inner">
+    <div class="header-inner container">
+
       <a href="home.html" class="brand">
-        <div class="brand-mark">SV</div>
+        <img src="images/companylogo.jpg" alt="SV Logo" class="brand-mark" />
         <div class="brand-text">
           <span class="brand-name">Shivuvishu Shipping Pvt Ltd</span>
           <span class="brand-tagline">Safe, seamless sea logistics</span>
@@ -25,70 +35,231 @@
         <a href="contact.html" class="nav-link">Contact</a>
       </nav>
 
-      <button id="navToggle" class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
-        ☰
-      </button>
+      <button id="navToggle" class="nav-toggle" aria-expanded="false">☰</button>
+
     </div>
   </header>
 
+  <!-- MAIN CONTENT -->
   <main class="container">
-    <section class="hero">
+
+    <!-- HERO SECTION -->
+    <section class="hero hero-visual">
       <div class="hero-inner">
-        <p class="eyebrow">About SV Shipping</p>
-        <h1>Safe, efficient and compliant freight solutions.</h1>
-        <p class="lead">
-          SV Shipping is a logistics and vessel management partner focused on safe, efficient and transparent sea transport.
-        </p>
+
+        <div class="hero-copy">
+          <span class="eyebrow">Ship management • Crew • Technical • Newbuilding</span>
+
+          <h1 class="hero-title">We keep fleets moving — safely, efficiently, globally.</h1>
+
+          <p class="hero-lead">
+            SV Shipping blends maritime expertise with modern systems to protect asset value,
+            ensure compliance and keep your operations on schedule.
+          </p>
+
+          <div class="hero-ctas">
+            <a href="contact.html" class="btn primary">Contact us</a>
+            <a href="services.html" class="btn ghost">Explore services</a>
+          </div>
+
+          <ul class="hero-stats">
+            <li><strong>24/7</strong><span>Operations</span></li>
+            <li><strong>100+</strong><span>Vessels managed</span></li>
+            <li><strong>Global</strong><span>Trade lanes</span></li>
+          </ul>
+        </div>
+
+        <!-- Ship Image -->
+        <div class="hero-media">
+          <div class="ship-wrap">
+            <img src="images/about-hero-ship.jpg" alt="SV Shipping Vessel" class="ship" loading="lazy">
+          </div>
+          <div class="badge">Trusted partner · ISO-ready</div>
+        </div>
+
+      </div>
+
+      <!-- Decorative wave -->
+      <svg class="wave" viewBox="0 0 1440 120" preserveAspectRatio="none">
+        <path d="M0,32 C200,120 400,0 720,48 C1040,96 1240,24 1440,64 L1440 120 L0 120 Z"></path>
+      </svg>
+    </section>
+
+    <!-- CAPABILITIES SECTION -->
+    <section class="section-caps">
+      <div class="section-head">
+        <h2>What we do</h2>
+        <p class="muted">End-to-end ship management built for uptime, safety and operational clarity.</p>
+      </div>
+
+      <div class="cards grid-3">
+
+        <article class="cap card-tilt">
+          <div class="cap-media">
+            <img src="images/crew.webp" alt="Crew management">
+          </div>
+          <div class="cap-body">
+            <h3>Crew Management</h3>
+            <p>
+              Selection, training, wellbeing programs and crew retention strategies that
+              work onboard and ashore.
+            </p>
+            <a href="services.html#crew" class="cap-more">Learn more →</a>
+          </div>
+        </article>
+
+        <article class="cap card-tilt">
+          <div class="cap-media">
+            <img src="images/tech.webp" alt="Technical support">
+          </div>
+          <div class="cap-body">
+            <h3>Technical Management</h3>
+            <p>
+              Planned maintenance, performance optimisation and rapid support
+              to maximise vessel availability.
+            </p>
+            <a href="services.html#technical" class="cap-more">Learn more →</a>
+          </div>
+        </article>
+
+        <article class="cap card-tilt">
+          <div class="cap-media">
+            <img src="images/supervision.webp" alt="Newbuilding supervision">
+          </div>
+          <div class="cap-body">
+            <h3>Newbuilding Supervision</h3>
+            <p>
+              From design review through sea trials —
+              hands-on oversight to deliver vessels on schedule.
+            </p>
+            <a href="services.html#newbuilding" class="cap-more">Learn more →</a>
+          </div>
+        </article>
+
       </div>
     </section>
 
-    <section class="about-grid">
-      <article class="card">
-        <h2>Who we are</h2>
-        <p>
-          We are a logistics company focused on safe, efficient and compliant freight solutions for owners, charterers and traders.
-        </p>
-        <p>
-          Our team designs customised plans for every client, from technical management and crewing to voyage and charter operations.
-        </p>
-      </article>
+    <!-- PROCESS SECTION -->
+    <section class="process">
+      <div class="section-head align-center">
+        <h2>How we work</h2>
+        <p class="muted">A predictable, audit-ready process so you always know the vessel status.</p>
+      </div>
 
-      <article class="card">
-        <h2>Our mission</h2>
-        <p>Deliver excellence in shipping and logistics with transparency, safety and long‑term partnerships.</p>
-      </article>
+      <ol class="timeline">
+        <li>
+          <div class="step">01</div>
+          <div class="step-body">
+            <h4>Onboarding & Review</h4>
+            <p>Vessel inspection, documentation review and risk assessment to create the initial plan.</p>
+          </div>
+        </li>
+
+        <li>
+          <div class="step">02</div>
+          <div class="step-body">
+            <h4>Plan & Mobilise</h4>
+            <p>Maintenance schedules, crew allocation, spares planning and readiness checks.</p>
+          </div>
+        </li>
+
+        <li>
+          <div class="step">03</div>
+          <div class="step-body">
+            <h4>Operate & Optimise</h4>
+            <p>24/7 ops desk, KPI monitoring, continuous improvement and transparent reporting.</p>
+          </div>
+        </li>
+      </ol>
     </section>
 
-    <section class="values">
-      <h2>Our values</h2>
-      <div class="value-grid">
-        <article>
-          <h3>Safety first</h3>
-          <p>Rigorous onboard and onshore procedures so every voyage meets high safety standards.</p>
-        </article>
-        <article>
-          <h3>Transparency</h3>
-          <p>Clear reporting, open communication and real‑time updates for owners and partners.</p>
-        </article>
-        <article>
-          <h3>Reliability</h3>
-          <p>Consistent technical oversight and responsive support across all operations.</p>
-        </article>
-        <article>
-          <h3>Global reach</h3>
-          <p>Strong port connections and logistics expertise across major trade lanes.</p>
-        </article>
+    <!-- CTA STRIP -->
+    <section class="cta-band">
+      <div class="container band-inner">
+        <div>
+          <h3>Ready to reduce downtime and optimise operations?</h3>
+          <p class="muted">Tell us about your vessel and get a customised proposal.</p>
+        </div>
+        <div class="band-actions">
+          <a href="contact.html" class="btn primary">Request a proposal</a>
+        </div>
       </div>
     </section>
+
+    <!-- TESTIMONIAL + MINI CONTACT FORM -->
+    <section class="bottom grid-2">
+      <div class="testimonial card-soft">
+        <div class="stars">★★★★★</div>
+        <blockquote>
+          SV Shipping provided consistent operational oversight and excellent communication
+          throughout our contract — results exceeded expectations.
+        </blockquote>
+        <div class="by muted">— Aryan, Fleet Manager</div>
+      </div>
+
+      <div class="contact-mini card-soft">
+        <h4>Request a callback</h4>
+
+        <form id="aboutContact" onsubmit="handleAboutContact(event)">
+          <input id="mini-email" type="email" placeholder="you@example.com" required />
+          <button type="submit" class="btn primary">Send</button>
+          <p id="miniStatus" class="muted small"></p>
+        </form>
+      </div>
+    </section>
+
   </main>
 
+  <!-- FOOTER -->
   <footer class="site-footer">
-    <div class="container footer-inner">
-      <small>© 2025 Shivuvishu Shipping Private Limited.</small>
-      <a href="mailto:info@svshipping.com">info@svshipping.com</a>
+    <div class="footer-inner container">
+      <div>© 2025 Shivuvishu Shipping Pvt Ltd</div>
+      <a href="mailto:info@svshipping.com" class="footer-email">info@svshipping.com</a>
     </div>
   </footer>
 
-  <script src="main.js"></script>
+  <!-- SCRIPTS -->
+  <script>
+    // mobile nav toggle
+    const navToggle = document.getElementById("navToggle");
+    const nav = document.getElementById("nav");
+
+    navToggle?.addEventListener("click", () => {
+      const expanded = navToggle.getAttribute("aria-expanded") === "true";
+      navToggle.setAttribute("aria-expanded", String(!expanded));
+      document.body.classList.toggle("nav-open");
+
+      if (window.getComputedStyle(nav).display === "flex") {
+        nav.style.display = "none";
+      } else {
+        nav.style.display = "flex";
+        nav.style.flexDirection = "column";
+      }
+    });
+
+    // mini contact form handler
+    function handleAboutContact(e) {
+      e.preventDefault();
+      const email = document.getElementById("mini-email").value.trim();
+      const status = document.getElementById("miniStatus");
+
+      if (!email) {
+        status.textContent = "Please enter a valid email.";
+        return;
+      }
+
+      status.textContent = "Sending...";
+      setTimeout(() => {
+        status.textContent = "Thank you! We will contact " + email;
+        e.target.reset();
+      }, 900);
+    }
+
+    // animate on load
+    if (window.matchMedia("(prefers-reduced-motion: no-preference)").matches) {
+      document.documentElement.classList.add("animate-on");
+    }
+  </script>
+
 </body>
 </html>
