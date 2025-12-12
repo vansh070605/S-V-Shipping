@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>SV Shipping | Contact</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="contact.css" />
+</head>
+<body>
+  <!-- header, Contact active -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="home.html" class="brand">
+        <div class="brand-mark">SV</div>
+        <div class="brand-text">
+          <span class="brand-name">Shivuvishu Shipping Pvt Ltd</span>
+          <span class="brand-tagline">Safe, seamless sea logistics</span>
+        </div>
+      </a>
+
+      <nav id="nav" class="site-nav">
+        <a href="home.html" class="nav-link">Home</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+
+      <button id="navToggle" class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        ☰
+      </button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Let’s plan your next voyage.</h1>
+      <p class="lead">Share your requirements and the SV Shipping team will get back shortly.</p>
+    </section>
+
+    <section class="contact-layout">
+      <div class="card">
+        <h2>Send us a message</h2>
+        <form id="contactForm" class="contact-form">
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" type="text" required />
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" type="email" required />
+          </div>
+          <div class="field">
+            <label for="subject">Subject</label>
+            <input id="subject" type="text" />
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+          <p id="formStatus" class="status-text"></p>
+        </form>
+      </div>
+
+      <div class="card info-card">
+        <h2>Contact details</h2>
+        <p>Email: <a href="mailto:ops@svshipping.com">ops@svshipping.com</a></p>
+        <p>Helpline: +91‑00000‑00000</p>
+        <p>Operations: 24/7 monitoring desk</p>
+
+        <h3>Head office</h3>
+        <p>SV Shipping, Chennai, India (placeholder address).</p>
+
+        <h3>Travel & crew</h3>
+        <p>Email: crewing@svshipping.com</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <small>© 2025 Shivuvishu Shipping Private Limited.</small>
+      <a href="mailto:ops@svshipping.com">ops@svshipping.com</a>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
