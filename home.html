@@ -4,126 +4,226 @@
   <meta charset="UTF-8" />
   <title>SV Shipping | Home</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Inter font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="home.css" />
 </head>
 <body>
 
+  <!-- TOP STRIP -->
+  <div class="top-strip">🚢 SAFE, SEAMLESS SEA LOGISTICS — SHIVUVISHU SHIPPING PVT LTD.</div>
+
   <!-- HEADER -->
-  <header class="site-header">
-    <div class="header-inner">
-      
-      <a href="home.html" class="brand">
-        <img src="images/companylogo.jpg" alt="SV Logo" class="brand-mark" />
+  <header class="site-header" role="banner">
+    <div class="header-inner container">
+      <a href="home.html" class="brand" aria-label="SV Shipping home">
+        <img src="images/companylogo.jpg" alt="SV Logo" class="brand-mark">
         <div class="brand-text">
-          <span class="brand-name">Shivuvishu Shipping Pvt Ltd</span>
-          <span class="brand-tagline">Safe, seamless sea logistics</span>
+          <div class="brand-name">Shivuvishu Shipping Pvt Ltd</div>
+          <div class="brand-tagline">Safe, seamless sea logistics</div>
         </div>
       </a>
 
-      <nav id="nav" class="site-nav">
+      <nav id="nav" class="site-nav" aria-label="Primary navigation">
         <a href="home.html" class="nav-link active">Home</a>
         <a href="services.html" class="nav-link">Services</a>
         <a href="about.html" class="nav-link">About</a>
         <a href="contact.html" class="nav-link">Contact</a>
       </nav>
 
-      <button id="navToggle" class="nav-toggle">☰</button>
-
+      <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="nav">☰</button>
     </div>
   </header>
 
-  <!-- MAIN CONTENT -->
+  <!-- HERO — grand, layered -->
   <main class="container">
+    <section class="hero hero-grand">
+      <div class="hero-inner">
+        <div class="hero-left">
+          <p class="eyebrow">Global vessel & cargo solutions</p>
+          <h1>Reliable shipping across every trade lane.</h1>
+          <p class="lead">
+            SV Shipping delivers safe, on-time and compliant sea logistics with
+            dedicated technical and crew management.
+          </p>
 
-    <!-- HERO -->
-    <section class="hero">
-      <div class="hero-content">
-        <p class="eyebrow">Global vessel & cargo solutions</p>
-        <h1>Reliable shipping across every trade lane.</h1>
-        <p class="lead">
-          SV Shipping delivers safe, on-time and compliant sea logistics with
-          dedicated technical and crew management.
-        </p>
+          <div class="hero-ctas">
+            <a href="services.html" class="btn primary">View Services</a>
+            <a href="contact.html" class="btn ghost">Get a Quote</a>
+          </div>
 
-        <div class="cta-row">
-          <a href="services.html" class="btn btn-primary">View Services</a>
-          <a href="contact.html" class="btn btn-ghost">Get a Quote</a>
+          <ul class="hero-features" aria-hidden="true">
+            <li><strong>24/7</strong><span>Operations</span></li>
+            <li><strong>100+</strong><span>Vessels managed</span></li>
+            <li><strong>Global</strong><span>Trade lanes</span></li>
+          </ul>
         </div>
+
+        <div class="hero-right">
+          <!-- layered card with ship image and overlay cards -->
+          <div class="visual-card">
+            <img class="ship-img" src="images/home-hero-ship.jpg" alt="SV vessel at sea" loading="lazy">
+            <div class="visual-overlay">
+              <div class="quick-card">
+                <div class="qc-title">Trusted partner</div>
+                <div class="qc-sub">ISO-ready • Compliant</div>
+              </div>
+              <div class="mini-testimonial">“Reliable & professional.” — Aryan</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-wave">
+        <!-- decorative SVG -->
+        <svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0,32 C200,120 400,0 720,48 C1040,96 1240,24 1440,64 L1440 80 L0 80 Z" fill="currentColor"></path></svg>
       </div>
     </section>
 
-    <!-- HIGHLIGHTS -->
-    <section class="highlights">
-      <article>
-        <h2>End-to-end vessel care</h2>
-        <p>Technical management, maintenance and safety oversight for a dependable fleet.</p>
-      </article>
+    <!-- HIGHLIGHTS — three cards -->
+    <section class="highlights section-caps">
+      <div class="section-head">
+        <h2>Highlights</h2>
+        <p class="muted">What sets SV Shipping apart</p>
+      </div>
 
-      <article>
-        <h2>Experienced global crew</h2>
-        <p>Certified seafarers and crew management for smooth vessel operations.</p>
-      </article>
+      <div class="highlights-grid">
+        <article class="highlight-card">
+          <div class="hc-visual"><img src="images/highlight-1.jpg" alt="End-to-end vessel care"></div>
+          <div class="hc-body">
+            <h3>End-to-end vessel care</h3>
+            <p>Technical management, maintenance and safety oversight for a dependable fleet.</p>
+          </div>
+        </article>
 
-      <article>
-        <h2>24/7 operations desk</h2>
-        <p>Round-the-clock support and voyage monitoring across key trade routes.</p>
-      </article>
+        <article class="highlight-card">
+          <div class="hc-visual"><img src="images/highlight-2.jpg" alt="Experienced global crew"></div>
+          <div class="hc-body">
+            <h3>Experienced global crew</h3>
+            <p>Certified seafarers and crew management for smooth vessel operations.</p>
+          </div>
+        </article>
+
+        <article class="highlight-card">
+          <div class="hc-visual"><img src="images/highlight-3.jpg" alt="24/7 operations desk"></div>
+          <div class="hc-body">
+            <h3>24/7 operations desk</h3>
+            <p>Round-the-clock support and voyage monitoring across key trade routes.</p>
+          </div>
+        </article>
+      </div>
     </section>
 
-    <!-- INFO STRIP -->
-    <section class="info-strip">
-
-      <div class="info-card">
+    <!-- INFO STRIP — why choose + metrics -->
+    <section class="info-strip elevated">
+      <div class="info-card big">
         <h3>Why shippers choose SV Shipping</h3>
-        <p>Transparent reporting, strict compliance and a safety-first culture on every voyage.</p>
+        <p>Transparent reporting, strict compliance and a safety-first culture on every voyage — we act as an extension of your maritime team.</p>
+        <a href="about.html" class="link-more">Learn more →</a>
       </div>
 
-      <div class="info-metrics">
-
-        <div class="metric-card">
-          <div class="icon">⏱️</div>
-          <span class="metric">24/7</span>
-          <span class="label">Ops support</span>
+      <div class="metrics">
+        <div class="metric">
+          <div class="m-icon">⏱️</div>
+          <div class="m-value">24/7</div>
+          <div class="m-label">Ops support</div>
         </div>
-
-        <div class="metric-card">
-          <div class="icon">🌍</div>
-          <span class="metric">Global</span>
-          <span class="label">Trade coverage</span>
+        <div class="metric">
+          <div class="m-icon">🌍</div>
+          <div class="m-value">Global</div>
+          <div class="m-label">Trade coverage</div>
         </div>
-
-        <div class="metric-card">
-          <div class="icon">⚓</div>
-          <span class="metric">Safety</span>
-          <span class="label">At our core</span>
+        <div class="metric">
+          <div class="m-icon">⚓</div>
+          <div class="m-value">Safety</div>
+          <div class="m-label">At our core</div>
         </div>
-
       </div>
     </section>
 
+    <!-- PROMINENT CTA BAND -->
+    <section class="cta-band">
+      <div class="band-inner">
+        <div>
+          <h3>Ready to move forward?</h3>
+          <p class="muted">Request a custom proposal for your vessel or fleet.</p>
+        </div>
+        <div class="band-actions">
+          <a href="contact.html" class="btn primary large">Request proposal</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- small testimonial area (bottom) -->
+    <section class="bottom section-caps">
+      <div class="testimonial card-soft">
+        <div class="stars">★★★★★</div>
+        <blockquote>SV Shipping provided consistent operational oversight and excellent communication throughout our contract — results exceeded expectations.</blockquote>
+        <div class="by muted">— Aryan, Fleet Manager</div>
+      </div>
+
+      <div class="contact-mini card-soft">
+        <h4>Quick contact</h4>
+        <p class="muted">Need a callback? Leave your email and we’ll reach out.</p>
+        <form id="miniForm" onsubmit="handleMini(event)">
+          <input id="miniEmail" type="email" placeholder="you@example.com" required>
+          <button class="btn primary" type="submit">Request callback</button>
+          <p id="miniMsg" class="muted small"></p>
+        </form>
+      </div>
+    </section>
   </main>
 
   <!-- FOOTER -->
   <footer class="site-footer">
-    <div class="footer-inner">
-
-      <small>© 2025 Shivuvishu Shipping Private Limited. All rights reserved.</small>
-
-      <!-- working mailto link -->
-      <a href="mailto:info@svshipping.com" class="footer-email">
-        info@svshipping.com
-      </a>
-
+    <div class="footer-inner container">
+      <div>© 2025 Shivuvishu Shipping Private Limited.</div>
+      <div class="footer-right">
+        <a class="footer-email" href="mailto:info@svshipping.com">info@svshipping.com</a>
+      </div>
     </div>
   </footer>
 
+  <!-- SCRIPTS -->
   <script>
-    // Mobile Navigation Toggle
-    const navToggle = document.getElementById("navToggle");
-    navToggle?.addEventListener("click", () => {
-      document.body.classList.toggle("nav-open");
+    // nav toggle
+    const navToggle = document.getElementById('navToggle');
+    const nav = document.getElementById('nav');
+    navToggle?.addEventListener('click', () => {
+      const expanded = navToggle.getAttribute('aria-expanded') === 'true';
+      navToggle.setAttribute('aria-expanded', String(!expanded));
+      document.body.classList.toggle('nav-open');
+      if (getComputedStyle(nav).display === 'flex') {
+        nav.style.display = 'none';
+      } else {
+        nav.style.display = 'flex';
+        nav.style.flexDirection = 'column';
+      }
     });
-  </script>
 
+    // mini form
+    function handleMini(e) {
+      e.preventDefault();
+      const m = document.getElementById('miniMsg');
+      const email = document.getElementById('miniEmail').value.trim();
+      if (!email) { m.textContent='Enter an email.'; return; }
+      m.textContent = 'Sending…';
+      setTimeout(()=> { m.textContent = 'Thanks — we will call ' + email; e.target.reset(); }, 900);
+    }
+
+    // responsive nav state
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 720) { nav.style.display='flex'; nav.style.flexDirection='row'; }
+      else if (!document.body.classList.contains('nav-open')) nav.style.display='none';
+    });
+    if (window.innerWidth <= 720) nav.style.display = 'none';
+
+    // animate on load if allowed
+    if (window.matchMedia("(prefers-reduced-motion: no-preference)").matches) {
+      document.documentElement.classList.add('animate-on');
+    }
+  </script>
 </body>
 </html>

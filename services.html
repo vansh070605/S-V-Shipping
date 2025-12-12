@@ -1,93 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>SV Shipping | Services</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Inter font (consistent across site) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="services.css" />
 </head>
 <body>
-  <!-- header, Services active -->
-  <header class="site-header">
-    <div class="container header-inner">
-      <a href="home.html" class="brand">
-        <div class="brand-mark">SV</div>
+
+  <!-- TOP STRIP -->
+  <div class="top-strip">🚢 SAFE, SEAMLESS SEA LOGISTICS — SHIVUVISHU SHIPPING PVT LTD.</div>
+
+  <!-- HEADER (same tokens as other pages) -->
+  <header class="site-header" role="banner">
+    <div class="header-inner container">
+      <a href="home.html" class="brand" aria-label="SV Shipping home">
+        <img src="images/companylogo.jpg" alt="SV Logo" class="brand-mark">
         <div class="brand-text">
-          <span class="brand-name">Shivuvishu Shipping Pvt Ltd</span>
-          <span class="brand-tagline">Safe, seamless sea logistics</span>
+          <div class="brand-name">Shivuvishu Shipping Pvt Ltd</div>
+          <div class="brand-tagline">Safe, seamless sea logistics</div>
         </div>
       </a>
 
-      <nav id="nav" class="site-nav">
+      <nav id="nav" class="site-nav" aria-label="Primary navigation">
         <a href="home.html" class="nav-link">Home</a>
         <a href="services.html" class="nav-link active">Services</a>
         <a href="about.html" class="nav-link">About</a>
         <a href="contact.html" class="nav-link">Contact</a>
       </nav>
 
-      <button id="navToggle" class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
-        ☰
-      </button>
+      <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="nav">☰</button>
     </div>
   </header>
 
+  <!-- MAIN -->
   <main class="container">
-    <section class="hero">
+
+    <!-- HERO (grand tone but simple) -->
+    <section class="hero hero-visual services-hero">
       <div class="hero-inner">
-        <h1>Technical & crew management built for safety.</h1>
-        <p class="lead">
-          From dry‑docking to global crewing, SV Shipping keeps every vessel compliant, maintained and ready to sail.
-        </p>
+        <div class="hero-copy">
+          <h1 class="hero-title">Technical & crew management built for safety.</h1>
+          <p class="hero-lead">From dry-docking to global crewing, SV Shipping keeps every vessel compliant, maintained and ready to sail.</p>
+        </div>
+
+        <div class="hero-media" aria-hidden="true">
+          <div class="ship-wrap">
+            <img src="images/ship-services.jpg" alt="Ship at sea" class="ship" loading="lazy">
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-wave" aria-hidden="true">
+        <svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0,32 C200,120 400,0 720,48 C1040,96 1240,24 1440,64 L1440 80 L0 80 Z" fill="currentColor"></path></svg>
       </div>
     </section>
 
-    <section class="services">
+    <!-- Core services -->
+    <section class="section-caps services-section">
       <div class="section-head">
         <h2>Core services</h2>
-        <p>End‑to‑end shipping support tailored for owners, operators and charterers.</p>
+        <p class="muted">End-to-end shipping support tailored for owners, operators and charterers.</p>
       </div>
 
-      <div class="service-grid">
-        <article class="service-card">
-          <img src="service-technical.jpg" alt="Technical vessel management" class="service-thumb" />
-          <h3>Technical Management</h3>
-          <p>Planned maintenance, repair oversight, inspections and dry‑dock support for safe, reliable vessels.</p>
+      <div class="grid-3 service-grid cards animate-on">
+        <article class="cap service-card">
+          <div class="cap-media"><img src="images/service-technical.jpg" alt="Technical vessel management"></div>
+          <div class="cap-body">
+            <h3>Technical Management</h3>
+            <p>Planned maintenance, repair oversight, inspections and dry-dock support for safe, reliable vessels.</p>
+          </div>
         </article>
 
-        <article class="service-card">
-          <img src="service-crew.jpg" alt="Crew management" class="service-thumb" />
-          <h3>Crew Management</h3>
-          <p>Recruitment, training, documentation and payroll for certified seafarers worldwide.</p>
+        <article class="cap service-card">
+          <div class="cap-media"><img src="images/service-crew.jpg" alt="Crew management"></div>
+          <div class="cap-body">
+            <h3>Crew Management</h3>
+            <p>Recruitment, training, documentation and payroll for certified seafarers worldwide.</p>
+          </div>
         </article>
 
-        <article class="service-card">
-          <img src="service-compliance.jpg" alt="Compliance and safety" class="service-thumb" />
-          <h3>Compliance & Safety</h3>
-          <p>Regulatory compliance, audits and safety systems aligned with international maritime standards.</p>
+        <article class="cap service-card">
+          <div class="cap-media"><img src="images/service-compliance.jpg" alt="Compliance and safety"></div>
+          <div class="cap-body">
+            <h3>Compliance & Safety</h3>
+            <p>Regulatory compliance, audits and safety systems aligned with international maritime standards.</p>
+          </div>
         </article>
 
-        <article class="service-card">
-          <img src="service-voyage.jpg" alt="Voyage and charter" class="service-thumb" />
-          <h3>Voyage & Charter Support</h3>
-          <p>Route planning, bunker optimisation and charter assistance for efficient trade lane operations.</p>
+        <article class="cap service-card">
+          <div class="cap-media"><img src="images/service-voyage.jpg" alt="Voyage and charter"></div>
+          <div class="cap-body">
+            <h3>Voyage & Charter Support</h3>
+            <p>Route planning, bunker optimisation and charter assistance for efficient trade lane operations.</p>
+          </div>
         </article>
       </div>
     </section>
 
-    <section class="contact-cta">
-      <h2>Need a tailored shipping solution?</h2>
-      <p>Share your fleet or cargo requirements and our team will respond with a focused plan.</p>
-      <a href="contact.html" class="btn btn-primary">Talk to our team</a>
+    <!-- Contact CTA -->
+    <section class="cta-band contact-cta-band">
+      <div class="band-inner container">
+        <div>
+          <h3>Need a tailored shipping solution?</h3>
+          <p class="muted">Share your fleet or cargo requirements and our team will respond with a focused plan.</p>
+        </div>
+        <div class="band-actions">
+          <a href="contact.html" class="btn primary large">Talk to our team</a>
+        </div>
+      </div>
     </section>
   </main>
 
+  <!-- FOOTER (matching other pages) -->
   <footer class="site-footer">
-    <div class="container footer-inner">
+    <div class="footer-inner container">
       <small>© 2025 Shivuvishu Shipping Private Limited.</small>
-      <a href="mailto:ops@svshipping.com">ops@svshipping.com</a>
+      <a href="mailto:ops@svshipping.com" class="footer-email">ops@svshipping.com</a>
     </div>
   </footer>
 
-  <script src="main.js"></script>
+  <!-- SCRIPTS -->
+  <script>
+    // mobile nav toggle (same pattern across site)
+    const navToggle = document.getElementById('navToggle');
+    const nav = document.getElementById('nav');
+    navToggle?.addEventListener('click', () => {
+      const expanded = navToggle.getAttribute('aria-expanded') === 'true';
+      navToggle.setAttribute('aria-expanded', String(!expanded));
+      document.body.classList.toggle('nav-open');
+      if (getComputedStyle(nav).display === 'flex') {
+        nav.style.display = 'none';
+      } else {
+        nav.style.display = 'flex';
+        nav.style.flexDirection = 'column';
+      }
+    });
+
+    // ensure nav visibility on resize
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 720) {
+        nav.style.display = 'flex';
+        nav.style.flexDirection = 'row';
+      } else {
+        if (!document.body.classList.contains('nav-open')) nav.style.display = 'none';
+      }
+    });
+    if (window.innerWidth <= 720) nav.style.display = 'none';
+
+    // entrance animations only when allowed
+    if (window.matchMedia('(prefers-reduced-motion: no-preference)').matches) {
+      document.documentElement.classList.add('animate-on');
+    }
+  </script>
 </body>
 </html>
