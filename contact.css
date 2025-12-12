@@ -120,9 +120,10 @@ input:focus,textarea:focus{outline:2px solid rgba(0,119,182,0.18);border-color:t
 .map-caption{margin-top:8px;font-size:13px;text-align:right}
 .map-caption a{color:var(--accent);text-decoration:none}
 
-/* footer (same tokens as about.css) */
+/* footer */
 .site-footer{margin-top:28px;padding:18px 0;background:linear-gradient(180deg,#023047,#01202f);color:#e6f9ff;border-radius:10px}
 .footer-inner{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.footer-email{padding:6px 10px;background:rgba(255,255,255,0.12);border-radius:8px;color:#fff;text-decoration:none;font-weight:600}
 
 /* small utilities & responsive */
 .muted{color:var(--muted)}

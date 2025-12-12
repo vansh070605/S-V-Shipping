@@ -213,8 +213,10 @@
   <!-- FOOTER -->
   <footer class="site-footer">
     <div class="footer-inner container">
-      <div>© 2025 Shivuvishu Shipping Pvt Ltd</div>
-      <a href="mailto:info@svshipping.com" class="footer-email">info@svshipping.com</a>
+      <div>© 2025 Shivuvishu Shipping Private Limited.</div>
+      <div class="footer-right">
+        <a class="footer-email" href="mailto:info@svshipping.com">info@svshipping.com</a>
+      </div>
     </div>
   </footer>
 
@@ -259,6 +261,61 @@
     if (window.matchMedia("(prefers-reduced-motion: no-preference)").matches) {
       document.documentElement.classList.add("animate-on");
     }
+  </script>
+
+  <!-- Gmail-convert: convert mailto: links into Gmail compose URLs (opens Gmail in a new tab).
+       This preserves subject/body if present in the original mailto.
+       Inserted here so it runs after the DOM is built.
+  -->
+  <script>
+    (function convertMailtoToGmail() {
+      function run() {
+        const mailAnchors = Array.from(document.querySelectorAll('a[href^="mailto:"]'));
+        if (!mailAnchors.length) return;
+
+        mailAnchors.forEach(a => {
+          try {
+            const original = a.getAttribute('href'); // e.g. mailto:info@svshipping.com?subject=Hi&body=Hello
+            if (!original) return;
+
+            // Remove "mailto:" prefix
+            const mailto = original.slice(7);
+            // Split address and query
+            const [toPart, queryPart] = mailto.split('?');
+            const to = decodeURIComponent((toPart || '').trim());
+
+            // Parse query parameters if present
+            const params = new URLSearchParams(queryPart || '');
+            const subj = params.get('subject') || '';
+            const body = params.get('body') || '';
+
+            // Build Gmail compose URL
+            const gmail = new URL('https://mail.google.com/mail/');
+            gmail.searchParams.set('view', 'cm');
+            gmail.searchParams.set('fs', '1'); // fullscreen compose
+            if (to) gmail.searchParams.set('to', to);
+            if (subj) gmail.searchParams.set('su', subj);
+            if (body) gmail.searchParams.set('body', body);
+
+            // Apply the new href and safe attributes
+            a.setAttribute('href', gmail.toString());
+            a.setAttribute('target', '_blank');
+            a.setAttribute('rel', 'noopener');
+            if (!a.getAttribute('aria-label')) {
+              a.setAttribute('aria-label', `Open Gmail compose to ${to || 'recipient'}`);
+            }
+          } catch (err) {
+            console.warn('convertMailtoToGmail error for', a, err);
+          }
+        });
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', run);
+      } else {
+        run();
+      }
+    })();
   </script>
 
 </body>
