@@ -161,6 +161,16 @@
   <!-- HERO — grand, layered -->
   <main class="container">
     <section class="hero hero-grand">
+      <!-- Video at the top -->
+      <div class="hero-video-top">
+        <video class="hero-top-video" autoplay loop muted playsinline preload="auto">
+          <source src="videos/shipping-animation.mp4" type="video/mp4">
+          <source src="videos/shipping-animation.webm" type="video/webm">
+          Your browser does not support the video tag.
+        </video>
+        <div class="hero-video-overlay"></div>
+      </div>
+
       <div class="hero-inner">
         <div class="hero-left">
           <p class="eyebrow">Global vessel & cargo solutions</p>
@@ -183,14 +193,9 @@
         </div>
 
         <div class="hero-right">
-          <!-- layered card with ship video and overlay cards -->
+          <!-- layered card with ship image and overlay cards -->
           <div class="visual-card">
-            <video class="ship-video" autoplay loop muted playsinline>
-              <source src="videos/shipping-animation.mp4" type="video/mp4">
-              <source src="videos/shipping-animation.webm" type="video/webm">
-              <!-- Fallback image if video doesn't load -->
-              <img class="ship-img" src="images/home-hero-ship.jpg" alt="Shivuvishu Shipping vessel at sea" loading="lazy">
-            </video>
+            <img class="ship-img" src="images/home-hero-ship.jpg" alt="Shivuvishu Shipping vessel at sea" loading="lazy">
             <div class="visual-overlay">
               <div class="quick-card">
                 <div class="qc-title">Trusted partner</div>
